@@ -14,17 +14,109 @@
 
 </head>
 
-<body>
-  <section class="home">
+<body class="poppins-regular">
+  <main class="bg-slate-950 min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
+    <!-- home section starts here -->
+    <section id="home" class="home text-white">
+      <div class="flex flex-col justify-center items-center min-h-screen gap-10">
+        <h1 class="text-8xl font-extrabold">Alpha Clash Pro</h1>
+        <p class="text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button onclick="play()" class="btn bg-white text-xl px-6 text-black">Play</button>
+      </div>
+    </section>
+    <!-- home section ends here -->
 
-  </section>
-  <section class="play-ground">
+    <!-- play-ground stars here -->
+    <section id="play-ground" class="play-ground hidden">
 
-  </section>
-  <section class="score">
-    
-  </section>
+      <div class="flex flex-col justify-center items-center gap-24 pt-16">
+        <!-- screen part -->
+        <div>
+          <div
+            class="artboard artboard-horizontal phone-6 border-[#020617CC] bg-[#FFFFFFB3] border-[20px]  rounded-2xl">
+            <div class="flex justify-center items-center">
+              <p class="bg-slate-500 text-white px-6 pb-4 rounded-b-2xl">Don't Watch Keyboard While Playing...</p>
+            </div>
+            <div class="flex justify-center items-center h-3/4">
+              <p id="random-alphabet" class="text-9xl font-bold uppercase">Y</p>
+            </div>
+          </div>
+        </div>
 
+        <!-- keyboard part -->
+        <div class="text-3xl">
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd id="q" class="kbd">q</kbd>
+            <kbd id="q" class="kbd">q</kbd>
+            <kbd id="w" class="kbd">w</kbd>
+            <kbd id="e" class="kbd">e</kbd>
+            <kbd id="r" class="kbd">r</kbd>
+            <kbd id="t" class="kbd">t</kbd>
+            <kbd id="y" class="kbd">y</kbd>
+            <kbd id="u" class="kbd">u</kbd>
+            <kbd id="i" class="kbd">i</kbd>
+            <kbd id="o" class="kbd">o</kbd>
+            <kbd id="p" class="kbd">p</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd id="a" class="kbd">a</kbd>
+            <kbd id="s" class="kbd">s</kbd>
+            <kbd id="d" class="kbd">d</kbd>
+            <kbd id="f" class="kbd">f</kbd>
+            <kbd id="g" class="kbd">g</kbd>
+            <kbd id="h" class="kbd">h</kbd>
+            <kbd id="j" class="kbd">j</kbd>
+            <kbd id="k" class="kbd">k</kbd>
+            <kbd id="l" class="kbd">l</kbd>
+          </div>
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd id="z" class="kbd">z</kbd>
+            <kbd id="x" class="kbd">x</kbd>
+            <kbd id="c" class="kbd">c</kbd>
+            <kbd id="v" class="kbd">v</kbd>
+            <kbd id="b" class="kbd">b</kbd>
+            <kbd id="n" class="kbd">n</kbd>
+            <kbd id="m" class="kbd">m</kbd>
+            <kbd id="/" class="kbd">/</kbd>
+          </div>
+        </div>
+
+        <!-- life score part -->
+        <div class="flex justify-between w-1/2">
+          <button class="btn rounded-full bg-fuchsia-600 text-white">
+            <p>Life</p>
+            <img class="w-6" src="images/heart.svg" alt="">
+            <span>1</span>
+          </button>
+          <button class="btn rounded-full bg-fuchsia-600 text-white">
+            <p>Score</p>
+            <img class="w-6" src="images/dollar.svg" alt="">
+            <span>1</span>
+          </button>
+
+
+
+        </div>
+      </div>
+
+    </section>
+    <!-- play-ground ends here -->
+
+
+    <!-- Score section start here -->
+    <section id="score-life" class="score flex flex-col justify-center items-center min-h-screen hidden">
+      <div class=" text-center space-y-4 bg-[#FFFFFF33] p-8 rounded-3xl">
+        <p class="text-6xl text-white font-bold ">Score: <span>12</span></p>
+        <button class="text-black text-2xl btn ">Play Again</button>
+        <p class="text-white">Practice will make you pro</p>
+      </div>
+
+    </section>
+  </main>
+
+
+  <script src="scripts/utility.js"></script>
+  <script src="scripts/alpha-clash.js"></script>
 </body>
 
 </html>
