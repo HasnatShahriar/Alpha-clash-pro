@@ -47,7 +47,6 @@
         <div class="text-3xl">
           <div class="flex justify-center gap-1 my-1 w-full">
             <kbd id="q" class="kbd">q</kbd>
-            <kbd id="q" class="kbd">q</kbd>
             <kbd id="w" class="kbd">w</kbd>
             <kbd id="e" class="kbd">e</kbd>
             <kbd id="r" class="kbd">r</kbd>
@@ -104,10 +103,11 @@
 
 
     <!-- Score section start here -->
-    <section id="score-life" class="score flex flex-col justify-center items-center min-h-screen hidden">
+    <section id="chance-score" class="score flex flex-col justify-center items-center min-h-screen hidden">
       <div class=" text-center space-y-4 bg-[#FFFFFF33] p-8 rounded-3xl">
-        <p class="text-6xl text-white font-bold ">Score: <span>12</span></p>
-        <button class="text-black text-2xl btn ">Play Again</button>
+        <h1 class="text-4xl">Game Over</h1>
+        <p class="text-6xl text-white font-bold ">Score: <span id="show-score">12</span></p>
+        <button onclick="play()" id="play-again" class="text-black text-2xl btn ">Play Again</button>
         <p class="text-white">Practice will make you pro</p>
       </div>
 
